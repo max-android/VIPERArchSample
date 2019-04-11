@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VIPERArchSample</string>
+    <string name="sign_in">Войти</string>
+    <string name="password_hint">password</string>
+    <string name="email_hint">email</string>
+    <string name="progress_authorization">Авторизация…</string>
+    <string name="start_source">start source</string>
+</resources>

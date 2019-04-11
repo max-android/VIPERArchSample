@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/card"
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardElevation="4dp"
+                                        app:cardMaxElevation="8dp"
+                                        app:cardPreventCornerOverlap="true"
+                                        app:cardCornerRadius="2dp"
+                                        app:cardUseCompatPadding="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:background="@drawable/shape_itemlist"
+                      android:foreground="?selectableItemBackground"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:fontFamily="sans-serif"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp"
+                    android:typeface="normal"
+                    tools:text="name"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
